@@ -5,6 +5,7 @@ const { saveToDb } = require("./filesystem");
 
 const { description, baseImageUri } = require("../input/config.js");
 
+
 // write metadata locally to json files
 const writeMetaData = (metadataList) => {
   fs.writeFileSync("./output/_metadata.json", JSON.stringify(metadataList));
